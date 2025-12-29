@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - FinSpector AI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Extra inline CSS to ensure display */
+        .test-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .test-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .test-card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+        .test-card .number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body style="background: #f9fafb; font-family: 'Sarabun', sans-serif;">
+
+    <!-- Test Banner -->
+    <div class="test-banner">
+        <h1>✅ FinSpector AI Platform - Test Preview</h1>
+        <p>หากคุณเห็นข้อความนี้ชัดเจน แสดงว่า CSS โหลดสำเร็จ!</p>
+    </div>
+
+    <!-- Test Navigation Bar -->
+    <nav class="navbar" style="background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 20px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div style="padding: 10px 20px; background: #f0f0f0; border-radius: 8px;">
+                    <strong style="color: #0066cc;">NECTEC</strong>
+                </div>
+                <div style="width: 1px; height: 30px; background: #ccc;"></div>
+                <div style="padding: 10px 20px; background: #f0f0f0; border-radius: 8px;">
+                    <strong style="color: #9333ea;">ETDA</strong>
+                </div>
+                <div style="width: 1px; height: 30px; background: #ccc;"></div>
+                <div>
+                    <i class="fas fa-shield-alt" style="color: #667eea;"></i>
+                    <strong style="color: #333; margin-left: 8px;">Red Teaming Challenge 2026</strong>
+                </div>
+            </div>
+            <div>
+                <i class="fas fa-user" style="color: #666;"></i>
+                <span style="margin-left: 8px; color: #666;">Participant</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Test Stats Cards -->
+    <div class="test-grid">
+        <div class="test-card">
+            <i class="fas fa-edit" style="font-size: 36px; color: #667eea; margin-bottom: 10px;"></i>
+            <div class="number">9</div>
+            <h3>Prompts Tested</h3>
+            <p style="color: #666;">จำนวน Prompt ที่ทดสอบ</p>
+        </div>
+
+        <div class="test-card">
+            <i class="fas fa-flag" style="font-size: 36px; color: #f5576c; margin-bottom: 10px;"></i>
+            <div class="number">14</div>
+            <h3>Flags Submitted</h3>
+            <p style="color: #666;">จำนวน Flag ที่ส่ง</p>
+        </div>
+
+        <div class="test-card">
+            <i class="fas fa-check-circle" style="font-size: 36px; color: #00f2fe; margin-bottom: 10px;"></i>
+            <div class="number">0</div>
+            <h3>Approved Flags</h3>
+            <p style="color: #666;">Flag ที่ผ่านการอนุมัติ</p>
+        </div>
+
+        <div class="test-card">
+            <i class="fas fa-star" style="font-size: 36px; color: #38f9d7; margin-bottom: 10px;"></i>
+            <div class="number">0</div>
+            <h3>Total Score</h3>
+            <p style="color: #666;">คะแนนรวม</p>
+        </div>
+    </div>
+
+    <!-- Test Buttons -->
+    <div style="text-align: center; padding: 40px;">
+        <h2 style="color: #333; margin-bottom: 20px;">🎯 ขั้นตอนการใช้งาน</h2>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <button style="background: #667eea; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 16px; cursor: pointer; box-shadow: 0 4px 12px rgba(102,126,234,0.3);">
+                <i class="fas fa-vial"></i> ทดสอบ Prompt
+            </button>
+            <button style="background: #f5576c; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 16px; cursor: pointer; box-shadow: 0 4px 12px rgba(245,87,108,0.3);">
+                <i class="fas fa-flag"></i> Flag ข้อบกพร่อง
+            </button>
+            <button style="background: #00f2fe; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 16px; cursor: pointer; box-shadow: 0 4px 12px rgba(0,242,254,0.3);">
+                <i class="fas fa-list"></i> My Submissions
+            </button>
+            <button style="background: #38f9d7; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 16px; cursor: pointer; box-shadow: 0 4px 12px rgba(56,249,215,0.3);">
+                <i class="fas fa-trophy"></i> Leaderboard
+            </button>
+        </div>
+    </div>
+
+    <!-- CSS Check -->
+    <div style="max-width: 800px; margin: 40px auto; padding: 30px; background: #fff3cd; border-radius: 12px; border-left: 5px solid #ffc107;">
+        <h3 style="color: #856404; margin-bottom: 15px;">
+            <i class="fas fa-check-circle"></i> ✅ CSS Status Check
+        </h3>
+        <ul style="color: #856404; line-height: 2;">
+            <li><strong>Font Awesome Icons:</strong> <i class="fas fa-check" style="color: green;"></i> Working (คุณเห็น icons)</li>
+            <li><strong>Google Fonts (Sarabun):</strong> <i class="fas fa-check" style="color: green;"></i> Working (ตัวอักษรไทยชัดเจน)</li>
+            <li><strong>External CSS (style.css):</strong> <span id="css-status">กำลังตรวจสอบ...</span></li>
+            <li><strong>Inline Styles:</strong> <i class="fas fa-check" style="color: green;"></i> Working (การ์ดแสดงผลถูกต้อง)</li>
+        </ul>
+    </div>
+
+    <!-- Test Result -->
+    <div style="max-width: 800px; margin: 20px auto; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h3 style="color: #2563eb; margin-bottom: 15px;">
+            <i class="fas fa-info-circle"></i> สรุปผลการทดสอบ
+        </h3>
+        <div style="padding: 20px; background: #f0f9ff; border-radius: 8px; border-left: 4px solid #2563eb;">
+            <p style="margin-bottom: 10px; line-height: 1.8;">
+                <strong>หากคุณเห็น:</strong>
+            </p>
+            <ul style="line-height: 2;">
+                <li>✅ Banner สีม่วงไล่เฉดด้านบน</li>
+                <li>✅ Navigation bar สีขาวพร้อมโลโก้ NECTEC + ETDA</li>
+                <li>✅ 4 การ์ดสถิติ (9, 14, 0, 0)</li>
+                <li>✅ ปุ่มสีสันต่างๆ พร้อม icons</li>
+                <li>✅ ข้อความภาษาไทยชัดเจน</li>
+            </ul>
+            <p style="margin-top: 15px; padding: 15px; background: #d1fae5; border-radius: 6px; color: #065f46;">
+                <strong>✅ แสดงว่า Platform พร้อมใช้งานแล้ว!</strong>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Check if CSS is loaded
+        window.addEventListener('load', () => {
+            const navbar = document.querySelector('.navbar');
+            if (navbar) {
+                const styles = window.getComputedStyle(navbar);
+                const cssStatus = document.getElementById('css-status');
+                if (styles.position === 'sticky' || styles.boxShadow !== 'none') {
+                    cssStatus.innerHTML = '<i class="fas fa-check" style="color: green;"></i> Working';
+                    cssStatus.style.color = 'green';
+                } else {
+                    cssStatus.innerHTML = '<i class="fas fa-times" style="color: red;"></i> Not Loaded';
+                    cssStatus.style.color = 'red';
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<svg width="480" height="120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="480" height="120" fill="#ffffff" rx="0"/>
+  
+  <!-- NECTEC Logo -->
+  <g transform="translate(20, 30)">
+    <!-- NECTEC Icon (stylized circuit/tech shape) -->
+    <path d="M 0,10 L 15,0 L 30,10 L 30,30 L 15,40 L 0,30 Z" fill="#8B2332" opacity="0.9"/>
+    <path d="M 35,5 L 45,5 L 45,35 L 35,35 Z" fill="#8B2332" opacity="0.9"/>
+    <rect x="50" y="15" width="20" height="10" fill="#8B2332" opacity="0.9"/>
+    
+    <!-- NECTEC Text -->
+    <text x="80" y="28" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#8B2332" letter-spacing="1">NECTEC</text>
+  </g>
+  
+  <!-- Separator Line -->
+  <line x1="240" y1="30" x2="240" y2="90" stroke="#d1d5db" stroke-width="2"/>
+  
+  <!-- ETDA Logo -->
+  <g transform="translate(260, 30)">
+    <!-- ETDA Diamond Icon -->
+    <polygon points="20,0 40,20 20,40 0,20" fill="#1e40af" opacity="0.15"/>
+    <polygon points="20,5 35,20 20,35 5,20" fill="#2563eb" opacity="0.3"/>
+    <polygon points="20,10 30,20 20,30 10,20" fill="#3b82f6"/>
+    
+    <!-- ETDA Text with Thai style -->
+    <text x="50" y="28" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1e40af" letter-spacing="2">ETDA</text>
+  </g>
+</svg>

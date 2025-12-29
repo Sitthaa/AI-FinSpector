@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Logo to Base64</title>
+</head>
+<body>
+    <h1>Logo Converter</h1>
+    <p>This page helps diagnose and convert logo to base64 if needed.</p>
+    
+    <div>
+        <h2>Test 1: Direct Image Load</h2>
+        <img src="images/logos-combined.png" alt="Direct Load" style="max-height: 100px;" 
+             onload="console.log('✅ Direct load SUCCESS'); this.style.border='2px solid green';"
+             onerror="console.error('❌ Direct load FAILED'); this.style.border='2px solid red'; document.getElementById('error').style.display='block';">
+    </div>
+    
+    <div id="error" style="display:none; color: red; margin-top: 20px;">
+        <h3>❌ Image Failed to Load</h3>
+        <p>The logo file exists but cannot be loaded in the preview environment.</p>
+        <p><strong>File Path:</strong> images/logos-combined.png</p>
+        <p><strong>File Size:</strong> 119,831 bytes</p>
+        <p><strong>Workaround:</strong> Using base64 encoding or checking file permissions.</p>
+    </div>
+    
+    <script>
+        console.log('Current location:', window.location.href);
+        console.log('Logo path:', new URL('images/logos-combined.png', window.location.href).href);
+        
+        // Try to fetch the logo
+        fetch('images/logos-combined.png')
+            .then(response => {
+                console.log('Fetch response status:', response.status);
+                console.log('Fetch response OK:', response.ok);
+                return response.blob();
+            })
+            .then(blob => {
+                console.log('Blob size:', blob.size);
+                console.log('Blob type:', blob.type);
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+            });
+    </script>
+</body>
+</html>

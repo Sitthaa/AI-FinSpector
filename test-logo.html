@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Test - FinSpector AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Sarabun', sans-serif;
+            padding: 40px;
+            background: #f9fafb;
+        }
+        
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #1f2937;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        
+        .test-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f3f4f6;
+            border-radius: 8px;
+            border: 2px solid #e5e7eb;
+        }
+        
+        .test-section h2 {
+            color: #374151;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .logo-wrapper {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .test-info {
+            margin-top: 15px;
+            padding: 15px;
+            background: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #1e40af;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        .status.success {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        
+        code {
+            background: #1f2937;
+            color: #10b981;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        
+        /* Logo Test Styles */
+        .logo-test-1 {
+            height: 42px;
+            width: auto;
+            display: block;
+        }
+        
+        .logo-test-2 {
+            height: 55px;
+            width: auto;
+            display: block;
+        }
+        
+        .logo-test-3 {
+            max-height: 80px;
+            width: auto;
+            display: block;
+        }
+        
+        .logo-with-hover {
+            height: 50px;
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .logo-with-hover:hover {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
+        
+        .error-msg {
+            color: #dc2626;
+            background: #fee2e2;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="test-container">
+        <h1>🧪 Logo Display Test - FinSpector AI</h1>
+        
+        <!-- Test 1: Basic Display -->
+        <div class="test-section">
+            <h2>Test 1: Basic Image Tag <span class="status success" id="status-1">กำลังทดสอบ...</span></h2>
+            <div class="logo-wrapper">
+                <img src="images/logos-combined.png" 
+                     alt="NECTEC & ETDA" 
+                     class="logo-test-1"
+                     onload="document.getElementById('status-1').textContent = '✅ โหลดสำเร็จ'; document.getElementById('status-1').className = 'status success';"
+                     onerror="document.getElementById('status-1').textContent = '❌ โหลดไม่สำเร็จ'; document.getElementById('status-1').className = 'status error'; this.parentElement.innerHTML += '<div class=\'error-msg\'>ไม่พบไฟล์ภาพ: images/logos-combined.png</div>';">
+            </div>
+            <div class="test-info">
+                <strong>Path:</strong> <code>images/logos-combined.png</code><br>
+                <strong>Height:</strong> 42px (ตาม navbar)<br>
+                <strong>CSS Class:</strong> <code>.logo-test-1</code>
+            </div>
+        </div>
+        
+        <!-- Test 2: Navbar Size -->
+        <div class="test-section">
+            <h2>Test 2: Navbar Size (42px) <span class="status success" id="status-2">กำลังทดสอบ...</span></h2>
+            <div class="logo-wrapper">
+                <img src="images/logos-combined.png" 
+                     alt="NECTEC & ETDA" 
+                     style="height: 42px; width: auto; display: block;"
+                     onload="document.getElementById('status-2').textContent = '✅ โหลดสำเร็จ'; document.getElementById('status-2').className = 'status success';"
+                     onerror="document.getElementById('status-2').textContent = '❌ โหลดไม่สำเร็จ'; document.getElementById('status-2').className = 'status error';">
+            </div>
+            <div class="test-info">
+                <strong>Inline Style:</strong> <code>height: 42px; width: auto;</code><br>
+                <strong>Use Case:</strong> Navigation bar logo
+            </div>
+        </div>
+        
+        <!-- Test 3: Guide Size -->
+        <div class="test-section">
+            <h2>Test 3: Guide Page Size (55px) <span class="status success" id="status-3">กำลังทดสอบ...</span></h2>
+            <div class="logo-wrapper">
+                <img src="images/logos-combined.png" 
+                     alt="NECTEC & ETDA - ศูนย์เทคโนโลยีอิเล็กทรอนิกส์และคอมพิวเตอร์แห่งชาติ และ สำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์" 
+                     class="logo-test-2"
+                     onload="document.getElementById('status-3').textContent = '✅ โหลดสำเร็จ'; document.getElementById('status-3').className = 'status success';"
+                     onerror="document.getElementById('status-3').textContent = '❌ โหลดไม่สำเร็จ'; document.getElementById('status-3').className = 'status error';">
+            </div>
+            <div class="test-info">
+                <strong>Height:</strong> 55px (ตาม guide page)<br>
+                <strong>CSS Class:</strong> <code>.logo-test-2</code>
+            </div>
+        </div>
+        
+        <!-- Test 4: Hover Effect -->
+        <div class="test-section">
+            <h2>Test 4: Hover Effect <span class="status success" id="status-4">กำลังทดสอบ...</span></h2>
+            <div class="logo-wrapper">
+                <img src="images/logos-combined.png" 
+                     alt="NECTEC & ETDA" 
+                     class="logo-with-hover"
+                     onload="document.getElementById('status-4').textContent = '✅ โหลดสำเร็จ'; document.getElementById('status-4').className = 'status success';"
+                     onerror="document.getElementById('status-4').textContent = '❌ โหลดไม่สำเร็จ'; document.getElementById('status-4').className = 'status error';">
+            </div>
+            <div class="test-info">
+                <strong>Hover Effect:</strong> Scale 1.1 + Brightness 1.1<br>
+                <strong>Instruction:</strong> ลองเลื่อนเมาส์ไปที่โลโก้<br>
+                <strong>CSS:</strong> <code>transform: scale(1.1); filter: brightness(1.1);</code>
+            </div>
+        </div>
+        
+        <!-- Test 5: Large Display -->
+        <div class="test-section">
+            <h2>Test 5: Large Display (80px) <span class="status success" id="status-5">กำลังทดสอบ...</span></h2>
+            <div class="logo-wrapper">
+                <img src="images/logos-combined.png" 
+                     alt="NECTEC & ETDA" 
+                     class="logo-test-3"
+                     onload="document.getElementById('status-5').textContent = '✅ โหลดสำเร็จ'; document.getElementById('status-5').className = 'status success';"
+                     onerror="document.getElementById('status-5').textContent = '❌ โหลดไม่สำเร็จ'; document.getElementById('status-5').className = 'status error';">
+            </div>
+            <div class="test-info">
+                <strong>Max Height:</strong> 80px<br>
+                <strong>Purpose:</strong> ทดสอบคุณภาพภาพที่ขนาดใหญ่
+            </div>
+        </div>
+        
+        <!-- File Info -->
+        <div class="test-section" style="background: #f0fdf4; border-color: #bbf7d0;">
+            <h2 style="color: #166534;">📁 File Information</h2>
+            <div style="padding: 15px; background: white; border-radius: 6px;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 10px; font-weight: 600; color: #374151;">File Path:</td>
+                        <td style="padding: 10px;"><code>images/logos-combined.png</code></td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 10px; font-weight: 600; color: #374151;">File Size:</td>
+                        <td style="padding: 10px;">119,831 bytes (120 KB)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 10px; font-weight: 600; color: #374151;">Format:</td>
+                        <td style="padding: 10px;">PNG (Portable Network Graphics)</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: 600; color: #374151;">Content:</td>
+                        <td style="padding: 10px;">NECTEC (red) + ETDA (blue) official logos</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Debug Info -->
+        <div class="test-section" style="background: #fef3c7; border-color: #fde047;">
+            <h2 style="color: #92400e;">🔧 Debug Information</h2>
+            <div style="padding: 15px; background: white; border-radius: 6px; font-size: 14px; font-family: monospace;">
+                <div style="margin-bottom: 10px;"><strong>Current URL:</strong> <span id="current-url"></span></div>
+                <div style="margin-bottom: 10px;"><strong>Image Full Path:</strong> <span id="image-path"></span></div>
+                <div><strong>User Agent:</strong> <span id="user-agent" style="font-size: 12px;"></span></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Set debug info
+        document.getElementById('current-url').textContent = window.location.href;
+        document.getElementById('image-path').textContent = new URL('images/logos-combined.png', window.location.href).href;
+        document.getElementById('user-agent').textContent = navigator.userAgent;
+        
+        // Log to console
+        console.log('🧪 Logo Test Page Loaded');
+        console.log('Current URL:', window.location.href);
+        console.log('Logo Path:', new URL('images/logos-combined.png', window.location.href).href);
+    </script>
+</body>
+</html>
