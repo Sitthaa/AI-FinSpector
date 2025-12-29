@@ -120,7 +120,7 @@ finspector-ai/
 
 ## 🔗 Links
 
-- **GitHub Repository:** https://github.com/Sithaa/AI-FinSpector/
+- **GitHub Repository:** https://github.com/Sitthaa/AI-FinSpector/
 - **Live Website:** https://sitthaa.github.io/AI-FinSpector/
 - **Documentation:** See docs/ folder
 
