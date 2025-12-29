@@ -102,6 +102,9 @@ finspector-ai/
 - ✅ Dashboard & Stats (100%)
 - ✅ Submissions & Leaderboard (100%)
 - ✅ Comprehensive Guide (100%)
+- ✅ Mock Sample Data (2 Flags) (100%)
+- ✅ Logo Updated (NECTEC + ETDA) (100%)
+- ✅ Deployed on GitHub Pages (100%)
 - ⚠️ Using Mock Data (LocalStorage)
 - ❌ Backend API Integration (Not Yet)
 - ❌ Real LLM Connection (Not Yet)
@@ -110,7 +113,14 @@ finspector-ai/
 
 ## 📝 Version History
 
-### Version 4.2.2 (Current)
+### Version 4.2.3 (Current - 2025-12-29)
+- ✅ แก้ไขปัญหาหน้า My Submission ไม่มีข้อมูลตัวอย่าง
+- ✅ เพิ่ม Mock Data 2 flags อัตโนมัติ (Gender Bias + PDPA Violation)
+- ✅ อัปเดตโลโก้เป็น NECTEC + ETDA (PNG + SVG)
+- ✅ Deploy บน GitHub Pages สำเร็จ
+- ✅ แก้ไข Emoji มือโบกให้เป็นสีขาว/เหลือง
+
+### Version 4.2.2
 - ✅ เปลี่ยน "ช่องโหว่/ข้อโหว่" → "ข้อบกพร่อง"
 - ✅ Updated Taxonomy to 4 categories
 - ✅ Improved UI/UX
